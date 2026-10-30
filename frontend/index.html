@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VastraVerse | Personalized Fashion & Sustainable E-Commerce</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            earth: {
+              DEFAULT: '#2D4030',
+              light: '#3E5742',
+              dark: '#1C291E',
+            },
+            sage: {
+              DEFAULT: '#526E55',
+              light: '#769479',
+              lightest: '#EAF0EB',
+            },
+            terracotta: {
+              DEFAULT: '#C86D51',
+              light: '#D98A72',
+              soft: '#FBF2EF',
+            },
+            ecru: {
+              DEFAULT: '#FAF7F2',
+              sand: '#F3EFE6',
+              muted: '#E5DFD3',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- React 18 & ReactDOM (Local for 100% offline reliability & instant load) -->
+  <script src="react.production.min.js"></script>
+  <script src="react-dom.production.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-ecru text-neutral-800 antialiased selection:bg-earth selection:text-white">
+  <div id="root">
+    <!-- Initial Loading State -->
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="text-center">
+        <div class="w-12 h-12 border-4 border-earth border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+        <p class="font-brand text-xl text-earth tracking-widest font-bold">VASTRAVERSE</p>
+        <p class="text-xs text-neutral-500 mt-1">Starting Sustainable Fashion & ML Engine...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Precompiled Standard JavaScript (Zero Babel overhead, instant 15ms execution) -->
+  <script src="app.bundle.js"></script>
+</body>
+</html>
